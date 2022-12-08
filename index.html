@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>Covid-19</title>
+
+    <script type="text/javascript">
+        $(function(){
+            $(window).scroll(function (){
+                if($(this).scrollTop()>700){
+                    $(".yukari").fadeIn(500);
+                } else{
+                    $(".yukari").fadeOut(500);
+                }
+            });
+            $(".yukari").click(function(){
+                $("html, body").animate({scrollTop:"0"}, 1800);
+            });
+        });
+    </script>
+
+</head>
+
+<body>   
+    <a href="#" class="yukari"></a>
+
+    <div>
+        <nav class="nav navbar-expand-md justify-content-center navbar-dark bg-dark ">
+            
+            <img class="logo imgsize" src="logocovid.png"> 
+            
+            <div class="collapse navbar-collapse  justify-content-center">
+              <ul class="navbar-nav ">
+                  
+                <li class="nav-item navsize">
+                    <a class="nav-link" href="index.html">Anasayfa</a>
+                </li>
+                <li class="nav-item navsize">
+                    <a class="nav-link" href="https://covid19asi.saglik.gov.tr/">Aşı Randevu Al</a>
+                </li>
+                <li class="nav-item navsize">
+                    <a class="nav-link" href="#veri">Covid Verileri</a>
+                    <li class="nav-item navsize">
+                        <a class="nav-link" href="#korun">Corona Virüsten Nasıl Korunuruz?</a>
+                    </li>
+                </li>
+              </ul>
+            </div>
+            
+        </nav>   
+    </div>
+
+    <div class="anasayfa"> 
+
+        <div  class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-1">
+                <img src="bg.jpeg" width="1500px">
+              </div>
+              <div class="col-md-11">
+                <div class="card-body">
+                    <a name="korun"></a>
+                  <h1 class="card-title">SİZ;<br>Nasıl Korunuyorsunuz?</h1>
+                  <p class="card-text">Gizemli virus olarak hayatımıza giren Corona virüsünün, hayvanlarda yaygın olarak görülen bir virüs türü olduğu biliniyor.
+                       Virüsün 4 alt türü bulunuyor. Ender olarak hayvanlardan insanlara bulabilirken bu bulaşma şekli “zoonoz” olarak adlandırılıyor. 
+                       Corona virüsün insandan insana bulaşabilen türünün ilk örnekleri 2003 yılında ortaya çıkan SARS ve 2019 yılında Suudi Arabistan’da ortaya çıkan MERS salgınlarında görüldü. 
+                       Şu anda gündemde olan tür ise SARS ve MERS salgınlarındaki türden farklı olarak daha önce tanımlanmamış yeni bir tür olarak biliniyor.<br><br><br>
+                    
+                    Bireysel düzlemde Dünya Sağlık Örgütü’nün tavsiyeleri şu şekilde:<br>
+                    - Grip, nezle, zatürre vb. hastalığı olan kişilerle yakın temastan kaçınılmalı<br>
+                    
+                    - Özellikle hasta insanlara temas sonrasında eller sık sık yıkanmalı<br>
+                    
+                    - Kırsal alanlarda yabani hayvanlarla temastan ve ölü hayvan cesetleriyle temastan kaçınılmalı<br>
+                    
+                    - Öksürürken ve hapşururken ağız ve burnu kapatacak şekilde dirseğimizin iç kısmını kullanılmalı, eğer eller kullanıldı ise yıkanmalı<br>
+                    
+                    - Hastanelerde enfeksiyondan korunma yöntemleri özenle uygulanmalı.
+                </p>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <iframe frameborder="0" width="100%" height="734" src="https://interaktif.trthaber.com/koronavirus/?map=1"></iframe>
+
+        <div class="row">
+            <a name="veri"></a>
+            <div>
+                <table class="table table-striped table-light" style="width: 300px; height: 400px; margin-top: 20px; margin-left: 75px; margin-right:50px;" align="left">
+                  <thead>
+                    <tr>
+                      <td colspan="2"><center>DÜNYA TOPLAM</center></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>Vaka</td>
+                      <td> <input type="text" value="177.833.450" style="text-align: center;"> </td> 
+                    </tr>
+                    
+                    <tr>
+                      <td>Vefat</td>
+                      <td> <input type="text" value="3.851.736"style="text-align: center;"> </td>
+                    </tr>
+                    
+                    <tr>
+                      <td>İyileşen</td>
+                      <td> <input type="text" value="173.981.714"style="text-align: center;"> </td>
+                    </tr>
+                
+                  </tbody>
+                </table>
+                
+                
+                <table class="table table-striped table-light" style="width: 300px; height: 400px; margin-top: 20px; margin-right:50px;" align="left">
+                    <thead>
+                    <tr>
+                        <td colspan="2"><center>TÜRKİYE AŞI İSTATİSLİKLERİ</center></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                
+                    <tr>
+                        <td>Verilen doz sayısı</td>
+                        <td><input type="text" value="40.619.152"style="text-align: center;"></td> 
+                    </tr>
+                
+                    <tr>
+                        <td>Tüm aşıları tamamlanan</td>
+                        <td><input type="text" value="14.317.739"style="text-align: center;"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Tüm aşıları tamamlanan yüzdesi</td>
+                        <td><input type="text" value="%17,5"style="text-align: center;"></td>
+                    </tr>
+                
+                    </tbody>
+                </table>
+
+                <table class="table table-striped table-light" style="width: 300px; height: 400px; margin-top: 20px; margin-right:50px;" align="left">
+                    <thead>
+                    <tr>
+                        <td colspan="2"><center>TÜRKİYE BUGÜN</center></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                
+                    <tr>
+                        <td>Vaka</td>
+                        <td><input type="text" value="5.575"style="text-align: center;"></td> 
+                    </tr>
+                
+                    <tr>
+                        <td>Vefat</td>
+                        <td><input type="text" value="59"style="text-align: center;"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>İyileşen</td>
+                        <td><input type="text" value="4.427"style="text-align: center;"></td>
+                    </tr>
+                
+                    </tbody>
+                </table>
+                <table class="table table-striped table-light" style="width: 300px; height: 400px; margin-top: 20px; margin-right:50px;">
+                    <thead>
+                    <tr>
+                        <td colspan="2"><center>TÜRKİYE TOPLAM</center></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                
+                    <tr>
+                        <td>Vaka</td>
+                        <td><input type="text" value="5.359.728"style="text-align: center;"></td> 
+                    </tr>
+                
+                    <tr>
+                        <td>Vefat</td>
+                        <td><input type="text" value="49.071"style="text-align: center;"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>İyileşen</td>
+                        <td><input type="text" value="5.224.224"style="text-align: center;"></td>
+                    </tr>
+                
+                    </tbody>
+                </table>
+            </div>
+
+        <div class="footer">
+    <div>
+        <h4>Aşı Randevu İçin</h4>
+        <pre>
+  https://covid19asi.saglik.gov.tr/   
+
+Adres: Bilkent Yerleşkesi, Üniversiteler Mahallesi Dumlupınar
+Bulvarı 6001. Cadde No: 9 Çankaya/Ankara 06800
++90 (312) 585 1000
+        </pre>
+    </div>
+</div>
+    
+</body>
+</html>
